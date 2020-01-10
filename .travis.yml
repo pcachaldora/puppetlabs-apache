@@ -54,7 +54,7 @@ matrix:
       stage: acceptance
       sudo: required
     -
-      before_script: ["bundle exec rake 'litmus:provision_list[travis_el7]'", "bundle exec rake 'litmus:install_agent[puppet5]'", "bundle exec rake litmus:install_module"]
+      before_script: ["bundle exec rake 'litmus:provision_list[travis_el]'", "bundle exec rake 'litmus:install_agent[puppet5]'", "bundle exec rake litmus:install_module"]
       bundler_args: 
       dist: trusty
       env: PLATFORMS=el7_puppet5
@@ -64,7 +64,7 @@ matrix:
       stage: acceptance
       sudo: required
     -
-      before_script: ["bundle exec rake 'litmus:provision_list[travis_el7]'", "bundle exec rake 'litmus:install_agent[puppet6]'", "bundle exec rake litmus:install_module"]
+      before_script: ["bundle exec rake 'litmus:provision_list[travis_el]'", "bundle exec rake 'litmus:install_agent[puppet6]'", "bundle exec rake litmus:install_module"]
       bundler_args: 
       dist: trusty
       env: PLATFORMS=el7_puppet6
